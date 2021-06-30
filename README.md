@@ -16,7 +16,7 @@ L'API web, déployé sur la platforme Heroku, est acessible [ici](https://app-cr
 ```
 conda env create -f environment_P7.yml
 ```
-- `P7_app_dash/requirements.txt` contient les requis pour l'API web et dashboard, ainsi que pour sont déploiement sur Heroku. Exécutez la commande pour son installation:
+- `P7_app_dash/requirements.txt` contient les requis pour l'API web et dashboard, ainsi que pour son déploiement sur Heroku. Exécutez la commande pour son installation:
 ```
 pip install -r requirements.txt
 ```
