@@ -2,16 +2,16 @@
 
 Ce projet est dedié au développement d’un modèle de scoring selon la probabilité de défaut de paiement d'un client, et son implémentation sous forme d'API web. 
 
-Il s'agit d'un modèle d'apprentissage supervisée pour la prédiction de la probabilité assoicée à la classification d'un client comme défaut, à partir des données variés sur les clients (ex. socio-démographiques, historique de demandes de prêt, etc), disponilbes sur [Kaggle](https://www.kaggle.com/c/home-credit-default-risk/data). 
+Il s'agit d'un modèle d'apprentissage supervisée pour la prédiction de la probabilité assoicée à la classification d'un client comme défaut, à partir des données variées sur les clients (ex. socio-démographiques, historique de demandes de prêt, etc), disponilbes sur [Kaggle](https://www.kaggle.com/c/home-credit-default-risk/data). 
 
 L'API web, déployé sur la platforme Heroku, est acessible [ici](https://app-credit-dashboard.herokuapp.com/), permettant de visualiser les résultats du modèle et sont intrepretation à travers du dashboard interactif.
 
-**Contenu:**
+### Contenu:
 
 - `P7_01_modelisation.ipynb`: comprend l'analyse, prétraitement et modélisation des données. 
-- `P7_app_dash`: contient le code pour implementer le modèle sous forme d’API (avec [Dash](https://github.com/plotly/dash)) et générant le dashboard (code principal dans `app_dash.py`), ainsi que les fichiers nécesaires à sont déploiement sur Heroku.
+- `P7_app_dash`: contient le code pour implementer le modèle sous forme d’API (avec [Dash](https://github.com/plotly/dash)) et générant le dashboard (code principal dans `app_dash.py`), ainsi que les fichiers nécesaires à son déploiement sur Heroku.
 
-**Packages requis:**
+### Packages requis:
 - `environment_P7.yml` permet de créer le même environnement utilisé avec `P7_01_modelisation.ipynb`. Exécutez la commande:
 ```
 conda env create -f environment_P7.yml
