@@ -3,7 +3,8 @@
 
 import sys
 import pandas as pd
-
+import numpy as np
+   
 
 def convert_types(df, print_info = False):
     '''Convert data types to reduce memory usage by using 
@@ -162,14 +163,14 @@ def mode_categorical(df, group_var, df_name):
     #categorical.columns = pd.Index([df_name + e[0] + "_" + e[1]. for e in categorical.columns.tolist()])
 
     column_names = []
+    
     # Iterate through the columns in level 0
-    for var in categorical.columns
+    for var in categorical.columns.levels[0]:
         # Iterate through the stats in level 1
         for stat in ['count_norm']:
             # Make a new column name
             column_names.append('%s_%s_%s' % (df_name, var, stat))
     
     categorical.columns = column_names
-    
     
     return categorical
