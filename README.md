@@ -8,8 +8,10 @@ L'API web, déployé sur la platforme Heroku, est acessible [ici](https://app-cr
 
 ### Contenu:
 
-- `P7_01_modelisation.ipynb`: comprend l'analyse, prétraitement et modélisation des données. 
-- `P7_app_dash`: contient le code pour implementer le modèle sous forme d’API (avec [Dash](https://github.com/plotly/dash)) et générant le dashboard (code principal dans `app_dash.py`), ainsi que les fichiers nécesaires à son déploiement sur Heroku.
+- [P7_01_modelisation.ipynb](https://github.com/arbarbeiro/P7_Modele_de_scoring/blob/main/P7_01_modelisation.ipynb) comprend l'analyse, prétraitement et modélisation des données. 
+- [app_dash.py](https://github.com/arbarbeiro/P7_Modele_de_scoring/blob/main/P7_app-credit-dashboard/app_dash.py) et [Dashboard_functions.py](https://github.com/arbarbeiro/P7_Modele_de_scoring/blob/main/P7_app-credit-dashboard/Dashboard_functions.py): contientent le code pour implementer le modèle sous forme d’API (backend) avec Dash et générant le dashboard (frontend), aussi en Dash.
+- [P7_app-credit-dashboard](https://github.com/arbarbeiro/P7_Modele_de_scoring/tree/main/P7_app-credit-dashboard) contient tous les fichiers nécesaires au déploiement de l'API sur Heroku.
+
 
 ### Packages requis:
 - `environment_P7.yml` permet de créer le même environnement utilisé avec `P7_01_modelisation.ipynb`. Exécutez la commande:
